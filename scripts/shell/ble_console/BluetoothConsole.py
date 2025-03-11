@@ -64,9 +64,9 @@ class BluetoothConsole( TerminalNotebook, BluetoothConnection):
         filem = Gtk.MenuItem(label = "File")
         filem.set_submenu(filemenu)
 
-        exit = Gtk.MenuItem(label = "Exit")
-        exit.connect("activate", Gtk.main_quit)
-        filemenu.append(exit)
+        exit_item = Gtk.MenuItem(label = "Exit")
+        exit_item.connect("activate", Gtk.main_quit)
+        filemenu.append(exit_item)
 
         self.connect_menu = Gtk.Menu()
         connect_item = Gtk.MenuItem(label = "Select device")
